@@ -243,17 +243,26 @@ table {
     top: -15px;
 }
 
-.g ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.g ul > div > div{
+.div-ps, .div-ai, .div-id, .div-xd {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
+    width: 150px;
+}
+
+.g ul {
+    width: 100%;
+}
+
+.g ul > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.g ul > div > div:first-child {
     margin-bottom: 10px;
 }
 
