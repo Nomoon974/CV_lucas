@@ -56,8 +56,7 @@ table {
     background-image: linear-gradient(to top, #008592, #006580, #00456a, #00284e, #000630);
     display: flex;
     flex-direction: row;
-    width: 40%;
-    height: 95%;
+    width: 50%;
     justify-content: center;
     padding: 8px;
     min-height: max-content;
@@ -71,7 +70,7 @@ table {
     margin-right: 3px;
 
     display: grid;
-    grid-auto-rows: 15% 1fr 0.8fr 1fr;
+    grid-auto-rows: 15% 1fr 0.7fr 0.7fr;
     grid-template-areas:
             "a"
             "b"
@@ -109,7 +108,7 @@ table {
     border-radius: 100%;
     position: absolute;
     top: -50px;
-    left: 85px;
+    left: 100px;
 }
 
 .cube {
@@ -181,13 +180,14 @@ table {
     padding: 10px 15px 10px 15px;
     margin-left: 3px;
 
+
     display: grid;
     grid-template-areas:
             "e"
             "f"
             "g"
             "h";
-    grid-auto-rows: 1fr 1fr 1fr 10%;
+    grid-auto-rows: 1fr 0.8fr 0.7fr 10%;
 }
 
 .e {
@@ -243,20 +243,21 @@ table {
     top: -15px;
 }
 
-.g > div:nth-of-type(2) ul {
+.g ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.g > div:nth-of-type(2) ul > div > div {
+.g ul > div > div{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 10px;
 }
 
-.g > div:nth-of-type(2) ul div li{
+.g ul div li{
     background-color: darkgrey;
     width: 30px;
     height: 30px;
